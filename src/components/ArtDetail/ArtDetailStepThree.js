@@ -120,7 +120,7 @@ const ArtDetailStepThree = (props) => {
                     <div className="row">
                         
                         <div className="col-md-12">
-                            <div className="form">
+                            <div className="form contact-height">
                           
                            {orderSucceed ? <p className="alert alert-success" > Order has been completed</p> : ''} 
                       
@@ -223,7 +223,7 @@ const ArtDetailStepThree = (props) => {
                                             {...register("termsAndCondition", {
                                                 required: "required",
                                             })} className="cbox" />
-                                        <label for="vehicle1">lch akzeptiere die <span class="agb">AGBs</span></label><br />
+                                        <label for="vehicle1">{t('lch')} <a href="" class="agb">AGBs</a></label><br />
                                         {errors.termsAndCondition && <p className="alert alert-danger">Terms And Condition is required</p>} 
                                         {/* <input type="text" pattern="[A-Za-z ]{3,}" placeholder="  Nachname" required className="form5" />
                                     <input type="text" pattern="[A-Za-z0-9.@ ]{3,}" placeholder="  E-Mail" name="wasi" required className="form3" />
@@ -246,7 +246,7 @@ const ArtDetailStepThree = (props) => {
                     </div>
                 </section>
             </section>
-            <section className="container-fluid theory3">
+            <section className="container-fluid theory3 theory-again">
                 <section className="container">
                     <div className="row">
                         <div className="col-md-12">

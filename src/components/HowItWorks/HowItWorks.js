@@ -21,6 +21,12 @@ const HowItWorks = () => {
         setLng('en');
       }
     }
+
+
+    setTimeout(function(){ 
+        var element = document.getElementById("link2");
+    element.classList.add("active"); }, 200);
+    
     return (
         <React.Fragment>
             <section className="main">
@@ -35,5 +41,6 @@ const HowItWorks = () => {
         </React.Fragment>
     )
 }
+
 
 export default HowItWorks;

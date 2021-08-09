@@ -47,11 +47,27 @@ const ArtDetail = (props) => {
 
     }, []);
 
-    const onClickImage = (imageUrl, length, width, product) => {
+    const onClickImage = (imageUrl, length, width, product,currentobj) => {
         setArtImage(imageUrl);
         setArtLength(length);
         setArtWidth(width);
         setProductDetail(product)
+       
+ 
+     
+
+       
+
+        
+for (let i = 0; i < document.getElementsByClassName("for-box-border").length; i++) {
+    document.getElementsByClassName("for-box-border")[i].classList.remove("active");
+   
+  }
+      
+        
+        var element = document.getElementById(currentobj);
+        element.classList.add("active"); 
+
     }
 
     const onChangeLenght = (event) => {
@@ -131,10 +147,10 @@ const ArtDetail = (props) => {
                                         <ul className="for-slider-ul">
                                             <div className="mini">
                                                 {isLoader ? <Loader /> : products.map((product, index) => {
-
+                                                    var    newvariable="select"+index;
                                                     return (
                                                         <li key={index} className="for-slider-li d-inline for-border ">
-                                                            <img  onClick={() => onClickImage(product.imageUrl, product.maxHeight, product.maxWidth, product)} className="for-box-border" src={product.imageUrl} />
+                                                            <img  onClick={() => onClickImage(product.imageUrl, product.maxHeight, product.maxWidth, product,newvariable)} className="for-box-border" id={newvariable} src={product.imageUrl} />
                                                         </li>
                                                     )
                                                 })}
@@ -151,7 +167,7 @@ const ArtDetail = (props) => {
                                                 {/* <a href="#"><i className="fa fa-plus imgAdd" /></a> */}
                                             </li>
                                             <li className="for-slider-li d-inline for-border">
-                                                <img className="demo cursor for-border-radius" src="/img/b1.jpeg" style={{ width: '19%' }} onClick={() => onClickMainImage('/img/b1.jpeg')} />
+                                                <img className="active demo cursor for-border-radius" src="/img/b1.jpeg" style={{ width: '19%' }} onClick={() => onClickMainImage('/img/b1.jpeg')} />
                                             </li>
                                             <li className="for-slider-lia d-inline for-border">
                                                 <img className="demo cursor for-border-radius" src="/img/b2.jpg" style={{ width: '16%' }} onClick={() => onClickMainImage('/img/b2.jpg')} />

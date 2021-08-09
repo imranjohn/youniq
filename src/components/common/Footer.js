@@ -1,8 +1,11 @@
 import React from 'react';
 
+
+
 const Footer = (props) => {
     return (
         <React.Fragment>
+
               <section className="container-fluid w5">
                 <section className="container">
                     <div className="row">

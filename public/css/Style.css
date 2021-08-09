@@ -140,6 +140,34 @@ p.col-section-3-pera {
     .inner-heading {
         margin-bottom: 25px;
     }
+    .round-content {
+        height: 140px;
+        background-color: #36c28e;
+        color: #fff;
+        width: 40%;
+        padding: 10px;
+        border-radius: 50%;
+        position: absolute;
+        right: 42px;
+        top: -77%;
+        text-align: center;
+        font-size: 14px;
+        transform: rotate( 
+    -17deg
+     );
+        line-height: 37px;
+    }
+    .round-content h3 {
+        font-weight: 900;
+        font-size: 20px;
+    }
+    h1.col-section-3-headeing {
+        font-size: 33px !important;
+        font-weight: 700 !important;
+        color: #444 !important;
+        margin: 0 auto;
+        width: 100%;
+    }
     .for-section-3-padding {
         padding: 54px 12px;
     }
@@ -184,5 +212,6 @@ h1.col-heading {
 p.col-section-3-pera {
     width: 100%;
     font-weight: 600;
+    margin-bottom: 52px;
 }
 }

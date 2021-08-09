@@ -21,6 +21,9 @@ const Home = () => {
         setLng('en');
       }
     }
+    setTimeout(function(){ 
+        var element = document.getElementById("link1");
+    element.classList.add("active"); }, 200);
     return (
         <React.Fragment>
 

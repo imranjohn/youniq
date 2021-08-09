@@ -217,9 +217,9 @@ const ArtDetailStepTwo = (props) => {
                                                 {products.map((product, index) => {
 
                                                     return (
-                                                        <li key={index}>
+                                                        <li key={index}   className={productData.artImage == product.imageUrl ? 'active' : ''}>
 
-                                                           <a href="" className="active"><img className={productData.artImage == product.imageUrl ? 'active' : ''} style={{ width: '50px' }} src={product.imageUrl} /></a> 
+                                                           <a href="javascript:;" ><img  style={{ width: '50px' }} src={product.imageUrl} /></a> 
 
                                                         </li>
                                                     )

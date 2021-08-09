@@ -49,6 +49,19 @@ const Header = (props) => {
 
   }
 
+function addClickToClass(linkattr)
+{
+
+ 
+  var element = document.getElementById(linkattr);
+  element.classList.add("active");
+
+
+
+  
+}
+  
+  
   //i18n.changeLanguage('en');
 
   return (
@@ -62,9 +75,9 @@ const Header = (props) => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
-                  <li className="list_item"><Link to={'/find-your-style'} className="nav_link">{t("Finde deinen stil")}</Link></li>
-                    <li className="list_item"><Link to={'/how-it-works'} className="nav_link">{t("Wie’s funktioniert")}</Link></li>
-                    <li className="list_item"><Link to={'/about-us'} className="nav_link">{t("Über Uns")}</Link></li>
+                  <li className="list_item"><Link to={'/find-your-style'} className="nav_link " id="link1"   activeClassName="active">{t("Finde deinen stil")}</Link></li>
+                    <li className="list_item"><Link to={'/how-it-works'} className="nav_link" id="link2"  activeClassName="active">{t("Wie’s funktioniert")}</Link></li>
+                    <li className="list_item"><Link to={'/about-us'} className="nav_link" id="link3"  activeClassName="active">{t("Über Uns")}</Link></li>
                     <li className="list_item"><button onClick={() => changeLanguageButton()} className="nav_link">{i18n.language == 'en' ? 'German Version' : 'English Version'}</button></li>
                   </Nav>
                 </Navbar.Collapse>

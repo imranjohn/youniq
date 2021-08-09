@@ -20,6 +20,10 @@ const AboutUs = () => {
             setLng('en');
         }
     }
+    
+    setTimeout(function(){ 
+      var element = document.getElementById("link3");
+  element.classList.add("active"); }, 200);
     return (
         <React.Fragment>
             <section className="container-fluid w1">
