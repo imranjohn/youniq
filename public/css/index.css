@@ -2,7 +2,22 @@
             common style
 ***************************************/
 
-
+.carousel-fade .carousel-control-next .carousel-control-next-icon {
+    background-image: url(../images/download.svg) !important;
+    width: 11px !important;
+}
+.carousel-fade .carousel-control-next {
+    right: 0;
+    top: 121% !important;
+    background-color: #7eb47e !important;
+}
+.carousel-fade .carousel-control-prev-icon {
+    background-image: url(../images/download2.svg) !important;
+    width: 11px !important;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: #f0f8ff00 !important;
+}
 @import url("https://use.typekit.net/ipw5bij.css");
 
 @font-face {
@@ -256,7 +271,7 @@ a.nav_link.active {
     text-transform: capitalize;
 }
 
-.nav{
+.nav {
     position: relative;
     width: 72%;
     display: flex;
@@ -265,6 +280,8 @@ a.nav_link.active {
     justify-content: space-between;
     font-size: .8rem;
     letter-spacing: 1.2px;
+    padding: 5px 5px 5px 5px !important;
+    box-shadow: 0px 0px 16px -5px #c7c5c5;
 }
 .nav_item {
     width: 100%;
@@ -286,11 +303,13 @@ a.nav_link.active {
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
     background-color: #fff;
-    width: 130px;
     text-align: center;
-    box-shadow: 1px 1px 1px 1px grey;
+    box-shadow: 0;
     border-radius: 4px;
     padding: 10px 20px;
+}
+.nav-tabs {
+    border-bottom: 0px solid #dee2e6;
 }
 .nav_link:active {
     border-bottom: 2px solid #36c28e !important;
@@ -953,11 +972,18 @@ a {
     width: 67px !important;
     height: 55px !important;
 }
-.carousel-control-next-icon {
-    background-image: url(../images/arrowright.png) !important;
+.testimonial .carousel-control-prev, .carousel-control-next .carousel-control-next-icon {
+    background-image: url(../images/arrowright.png)  !important;
     width: 67px !important;
     height: 55px !important;
 }
+/* .inner-tab .carousel-control-next-icon {
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e)  !important;
+    background-color: #bcdabf;
+    position: absolute;
+    top: 129px;
+    border-radius: 50%;
+} */
 .heading-die {
     text-align: center;
     display: flex;
@@ -1035,49 +1061,22 @@ a.prev {
     /* -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 } */
-
-body {
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    padding: 0;
-    margin: 0;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    background-color: #e5e5e5;
-    color: #1a1a1a;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
+a.nav_logo img {
+    width: 200px;
 }
 
-p,
-ol,
-ul,
-li,
-dl,
-dt,
-dd,
-blockquote,
-figure,
-fieldset,
-form,
-legend,
-textarea,
-pre,
-iframe,
-hr,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    padding: 0;
-    margin: 0;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+.nav-tabs .nav-item {
+    margin-bottom: 0px  !important;
+    border-right: 1px solid #e0dddd !important;
+    width: 120px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 15px;
 }
-
+a#controlled-tab-example-tab-5 {
+    border: none !important;
+}
 /**
  * Global Rules
  */
@@ -1330,6 +1329,9 @@ a.next img {
         cursor: pointer;
 }
 @media (max-width: 767px){
+    a.nav_logo img {
+        width: 100px;
+    }
 .top_nav {
     width: 100%;
     height: 100%;
@@ -1668,6 +1670,9 @@ a.prev {
 input.slider__nav {
     position: relative;
     left: 0%;
+}
+.container-fluid.ten7 {
+    margin-top: 173px;
 }
 }
 
@@ -2251,4 +2256,7 @@ span#right-arrow {
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
     display: block;
     border: none !important;
+}
+.inner-tab .carousel .slide .carousel-fade .carousel-control-next-icon {
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e)  ;
 }

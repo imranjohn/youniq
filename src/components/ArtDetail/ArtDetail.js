@@ -266,8 +266,8 @@ for (let i = 0; i < document.getElementsByClassName("for-box-border").length; i+
                             </div>
                             <div className="col-md-3">
                                 <div className="for-last-heading">
-                                    <h6>{t('Länge')}</h6>
-                                    <p>175 cm</p>
+                                    {/* <h6>{t('Länge')}</h6>
+                                    <p>175 cm</p> */}
                                 </div>
                             </div>
                         </div>

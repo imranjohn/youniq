@@ -71,7 +71,7 @@ function addClickToClass(linkattr)
           <header className="header">
             <Navbar bg="light" expand="lg">
             <div className="top_nav">
-              <div className="logo"><Link to={'/'} className="nav_logo">{t("Youniq.Art")}</Link></div>
+              <div className="logo"><Link to={'/'} className="nav_logo"><img src="images/newlog.png"></img></Link></div>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">

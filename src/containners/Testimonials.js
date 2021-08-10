@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel'
 
 const Testimonials = (props) => {
 
+
     return (
         <React.Fragment>
             <div className="heading-die"> <img src="images/Capture.png" />
